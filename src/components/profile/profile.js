@@ -4,6 +4,7 @@ import { useState } from 'react';
 import NavBar from '../navbar/navBar.js';
 import { updatePass } from "../../utils";
 import { Navigate } from "react-router-dom";
+import Footer from '../footer/footer.js';
 
 const Profile = ({user, setUser}) => {
     const [editMode, setEditMode] = useState(false);
@@ -21,7 +22,7 @@ const Profile = ({user, setUser}) => {
             <NavBar user={user} setUser={setUser} />
             <div className="profileContainer">
                 <div className='profileImage'>
-                    <img src="./images/profile-image.png" alt="profile-image" ></img>
+                    <img src="./images/profile-image.png" alt="profile of the collaborators" ></img>
                 </div>
                 <div className='profileInfo'>   
                     { editMode ? 
@@ -43,8 +44,10 @@ const Profile = ({user, setUser}) => {
                             </div>
                         </>
                     } 
-                </div>   
-            </div>         
+                </div>
+               
+            </div>
+         <Footer/>         
         </div>
     );
 }
