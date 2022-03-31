@@ -30,8 +30,7 @@ export const Login = ({user, setUser}) => {
   return (
     
     <div className="loginpage">
-     
-
+    
     <div className="welcome">
           <img src={bool ? "./images/photo4.png" : "./images/photo1.png"} alt="left menu" ></img>      
     </div>
@@ -75,12 +74,9 @@ export const Login = ({user, setUser}) => {
           <br></br>
         </form>
 
-       
-
         <label className="label">{!bool ? " Already have an account? " : " Don't have an account?  " } </label>
 
         <button className="logV" onClick={handleClick}> Click here! </button>
-
 
       </div>
     </div>
